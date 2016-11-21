@@ -1,0 +1,9 @@
+language: objective-c
+osx_image: xcode8
+
+before_install:
+    - rvm get head
+script:
+    - sh scripts/ci.sh
+after_success:
+    - bash <(curl -s https://codecov.io/bash)
