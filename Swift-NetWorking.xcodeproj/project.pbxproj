@@ -10,6 +10,9 @@
 		A8174E661DE28C2800B86D3A /* PayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8174E651DE28C2800B86D3A /* PayManager.swift */; };
 		A81750401DE2DC9900B86D3A /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A817503F1DE2DC9900B86D3A /* CourseModel.swift */; };
 		A820B8971DE030A200A45CF4 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A820B8961DE030A200A45CF4 /* TestTableViewController.swift */; };
+		A83006271DE3F2A800F2AD73 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83006261DE3F2A800F2AD73 /* AppInfo.swift */; };
+		A86095F91DE69D6B00DD8C46 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A81750301DE2D18D00B86D3A /* HandyJSON.framework */; };
+		A86095FA1DE69D6B00DD8C46 /* HandyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A81750301DE2D18D00B86D3A /* HandyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8656ABB1DE00632001C3634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8656ABA1DE00632001C3634 /* AppDelegate.swift */; };
 		A8656ABD1DE00632001C3634 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8656ABC1DE00632001C3634 /* ViewController.swift */; };
 		A8656AC01DE00632001C3634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8656ABE1DE00632001C3634 /* Main.storyboard */; };
@@ -78,6 +81,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 393E0FE91DA2494F00B3BC12;
 			remoteInfo = "HandyJSON macOS Tests";
+		};
+		A86095FB1DE69D6B00DD8C46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A81750241DE2D18D00B86D3A /* HandyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 21520C431D3341B200F53111;
+			remoteInfo = "HandyJSON iOS";
 		};
 		A8656ACC1DE00633001C3634 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -159,6 +169,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				A8656B051DE006F0001C3634 /* Alamofire.framework in Embed Frameworks */,
+				A86095FA1DE69D6B00DD8C46 /* HandyJSON.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +181,7 @@
 		A81750241DE2D18D00B86D3A /* HandyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = HandyJSON.xcodeproj; sourceTree = "<group>"; };
 		A817503F1DE2DC9900B86D3A /* CourseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
 		A820B8961DE030A200A45CF4 /* TestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
+		A83006261DE3F2A800F2AD73 /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		A8656AB71DE00632001C3634 /* Swift-NetWorking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-NetWorking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8656ABA1DE00632001C3634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8656ABC1DE00632001C3634 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8656B041DE006F0001C3634 /* Alamofire.framework in Frameworks */,
+				A86095F91DE69D6B00DD8C46 /* HandyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +293,7 @@
 				A820B8961DE030A200A45CF4 /* TestTableViewController.swift */,
 				A8174E651DE28C2800B86D3A /* PayManager.swift */,
 				A817503F1DE2DC9900B86D3A /* CourseModel.swift */,
+				A83006261DE3F2A800F2AD73 /* AppInfo.swift */,
 			);
 			path = "Swift-NetWorking";
 			sourceTree = "<group>";
@@ -341,6 +355,7 @@
 			);
 			dependencies = (
 				A8656B071DE006F0001C3634 /* PBXTargetDependency */,
+				A86095FC1DE69D6B00DD8C46 /* PBXTargetDependency */,
 			);
 			name = "Swift-NetWorking";
 			productName = "Swift-NetWorking";
@@ -586,6 +601,7 @@
 				A8656ABD1DE00632001C3634 /* ViewController.swift in Sources */,
 				A8656ABB1DE00632001C3634 /* AppDelegate.swift in Sources */,
 				A820B8971DE030A200A45CF4 /* TestTableViewController.swift in Sources */,
+				A83006271DE3F2A800F2AD73 /* AppInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +624,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A86095FC1DE69D6B00DD8C46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "HandyJSON iOS";
+			targetProxy = A86095FB1DE69D6B00DD8C46 /* PBXContainerItemProxy */;
+		};
 		A8656ACD1DE00633001C3634 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A8656AB61DE00632001C3634 /* Swift-NetWorking */;
